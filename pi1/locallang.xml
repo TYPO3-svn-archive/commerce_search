@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_commercesearch_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="search">Search</label>
+			<label index="search_submit">Search</label>
+			<label index="product">Product</label>
+			<label index="category">Category</label>
+			<label index="no_results">No Results</label>
+			<label index="picture">Picture</label>
+			<label index="searchtype_select">Searchtype</label>
+			<label index="searchtype_default">Default</label>
+			<label index="searchtype_exact">Exact</label>
+			<label index="searchtype_startswith">Starts with</label>
+			<label index="showLetterNavigation">Show letter navigation</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="search">Suche</label>
+			<label index="search_submit">Suchen</label>
+			<label index="product">Produkt</label>
+			<label index="category">Kategorie</label>
+			<label index="no_results">Ihre Suchanfrage ergab keine Treffer.</label>
+			<label index="picture">Bild</label>
+			<label index="searchtype_select">Suchtyp</label>
+			<label index="searchtype_default">Standard</label>
+			<label index="searchtype_exact">Exakt</label>
+			<label index="searchtype_startswith">Beginnt mit</label>
+			<label index="showLetterNavigation">Zeige Buchstabennavigation</label>
+		</languageKey>
+		<languageKey index="pl" type="array">
+			<label index="search">Znajdź produkty</label>
+			<label index="search_submit">Szukaj</label>
+			<label index="product">Produkt</label>
+			<label index="category">Kategoria</label>
+			<label index="no_results">Brak wyników</label>
+			<label index="picture">Zdjęcie</label>
+			<label index="showLetterNavigation">Pokaz nawigacje liter</label>
+			<label index="searchtype_select">Typ</label>
+			<label index="searchtype_default">Standardowe</label>
+			<label index="searchtype_exact">Dokladne</label>
+			<label index="searchtype_startswith">Zaczyna sie</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="pl" type="array">
+			<label index="search" type="integer">20138052</label>
+			<label index="search_submit" type="integer">20138052</label>
+			<label index="product" type="integer">233508945</label>
+			<label index="category" type="integer">61717939</label>
+			<label index="no_results" type="integer">198902430</label>
+			<label index="picture" type="integer">145643537</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="search" type="integer">20138052</label>
+			<label index="search_submit" type="integer">20138052</label>
+			<label index="product" type="integer">233508945</label>
+			<label index="category" type="integer">61717939</label>
+			<label index="no_results" type="integer">198902430</label>
+			<label index="picture" type="integer">145643537</label>
+			<label index="searchtype_select" type="integer">8106190</label>
+			<label index="searchtype_default" type="integer">128029197</label>
+			<label index="searchtype_exact" type="integer">23370477</label>
+			<label index="searchtype_startswith" type="integer">20597250</label>
+			<label index="showLetterNavigation" type="integer">44209415</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="pl" type="array">
+			<label index="search">Search</label>
+			<label index="search_submit">Search</label>
+			<label index="product">Product</label>
+			<label index="category">Category</label>
+			<label index="no_results">No Results</label>
+			<label index="picture">Picture</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="search">Search</label>
+			<label index="search_submit">Search</label>
+			<label index="product">Product</label>
+			<label index="category">Category</label>
+			<label index="no_results">No Results</label>
+			<label index="picture">Picture</label>
+			<label index="searchtype_select">Searchtype</label>
+			<label index="searchtype_default">Default</label>
+			<label index="searchtype_exact">Exact</label>
+			<label index="searchtype_startswith">Starts with</label>
+			<label index="showLetterNavigation">Show letter navigation</label>
+		</languageKey>
+	</orig_text>
+</T3locallang>

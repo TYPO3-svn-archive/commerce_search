@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'commerce_search'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.list_type_pi1">Commerce Search</label>
+			<label index="search">Search:</label>
+			<label index="search_submit">Search</label>
+			<label index="product">Product</label>
+			<label index="category">Category</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tt_content.list_type_pi1">Commerce Suche</label>
+			<label index="search">Suchen:</label>
+			<label index="search_submit">Suchen</label>
+			<label index="product">Produkt</label>
+			<label index="category">Kategorie</label>
+		</languageKey>
+		<languageKey index="pl" type="array">
+			<label index="tt_content.list_type_pi1">Commerce Wyszukiwarka</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="tt_content.list_type_pi1" type="integer">4060659</label>
+			<label index="search" type="integer">38545776</label>
+			<label index="search_submit" type="integer">20138052</label>
+			<label index="product" type="integer">233508945</label>
+			<label index="category" type="integer">61717939</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="tt_content.list_type_pi1">Commerce Search</label>
+			<label index="search">Search:</label>
+			<label index="search_submit">Search</label>
+			<label index="product">Product</label>
+			<label index="category">Category</label>
+		</languageKey>
+	</orig_text>
+</T3locallang>

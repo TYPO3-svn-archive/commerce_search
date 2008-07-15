@@ -1,0 +1,192 @@
+ <?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>commerce_search Template</title>
+
+</head>
+<body>
+
+
+
+
+
+<h3>FORMULAR</h3>
+
+<!-- MARKERS -->
+###FORM_BEGIN###
+###FORM_END###
+
+###PAGE_BROWSER###
+
+###LETTERNAVIGATION###
+
+###LABEL_SEARCH###
+###INPUT_SEARCH###
+
+###INPUT_SUBMIT###
+
+###IMAGE_HEADER###
+
+###PRODUCT_TEASERIMAGES###
+###PRODUCT_HEADER###
+###PRODUCT_TITLE###
+
+###LABEL_CATEGORIES###
+###SELECT_CATEGORIES###
+
+###CATEGORY_HEADER###
+###CATEGORY_LINK###
+###CATEGORY_TITLE###
+###CATEGORY_NAVTITLE###
+
+
+
+<!--
++++++++++++++++++++++++++++++++
+Template for the formular
++++++++++++++++++++++++++++++++
+-->
+<!-- ###FORMULAR### begin -->
+<div id="tx_commercesearch_pi1_formular">
+	###FORM_BEGIN###
+	<table class="tx_commercesearch_pi1_formular_table">
+		<tbody>
+			<tr>
+				<th>###LABEL_SEARCH###</th>
+				<td>###INPUT_SEARCH###</td>
+			</tr>
+			<tr>
+				<th>###LABEL_CATEGORIES###</th>
+				<td>###SELECT_CATEGORIES###</td>
+			</tr>
+			<tr>
+				<th>###LABEL_SELECTSEARCHTYPE###</th>
+				<td>###SELECT_SEARCHTYPE###</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td></td>
+				<td>###INPUT_SUBMIT###</td>
+			</tr>
+		</tfoot>
+	</table>
+	###FORM_END###
+</div>
+
+	<div class="tx_commercesearch_pi1_letternavigation">
+		###LETTERNAVIGATION###
+	</div>
+<!-- ###FORMULAR### end -->
+
+
+
+
+<!-- This formular is used if the plugin is inserted through a template with TypoScript -->
+<!-- ###FORMULAR_TS### begin -->
+<div id="tx_commercesearch_pi1_formular_ts">
+	###FORM_BEGIN###
+	<table class="tx_commercesearch_pi1_formular_table_small">
+		<tbody>
+			<tr>
+				<th>###LABEL_SEARCH###</th>
+				<td>###INPUT_SEARCH###</td>
+			</tr>
+			<tr>
+				<td colspan="2">###SELECT_CATEGORIES###</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td></td>
+				<td>###INPUT_SUBMIT###</td>
+			</tr>
+		</tfoot>
+	</table>
+	###FORM_END###
+</div>
+<!-- ###FORMULAR_TS### end -->
+
+
+
+
+
+
+<h3>LETTER NAVIGATION</h3>
+ <!--
++++++++++++++++++++++++++++++++
+Template if no result is given
++++++++++++++++++++++++++++++++
+-->
+
+<!-- ###LETTER_NAVIGATION### begin -->
+<span class="tx_commercesearch_pi1_letter"><a href="###LETTER_LINK###">###LETTER###</a></span><!-- ###LETTER_NAVIGATION### end -->
+
+
+
+
+
+<h3>NO RESULT</h3>
+ <!--
++++++++++++++++++++++++++++++++
+Template if no result is given
++++++++++++++++++++++++++++++++
+-->
+
+<!-- ###NO_RESULT### begin -->
+<div id="tx_commercesearch_pi1_result">
+	<p>###LABEL_NO_RESULT###</p>
+</div>
+<!-- ###NO_RESULT### end -->
+
+
+
+<h3>RESULT</h3>
+ 
+<!--
++++++++++++++++++++++++++++++++
+Template for the result
++++++++++++++++++++++++++++++++
+-->
+<!-- ###RESULT### begin -->
+<div id="tx_commercesearch_pi1_result">
+
+	<table summary="searchResults" class="tx_commercesearch_pi1_result_table">
+		<thead>
+			<tr>
+				<th class="image"></th>
+				<th class="title">###PRODUCT_HEADER###</th>
+				<th class="title">###CATEGORY_HEADER###</th>
+			</tr>
+		</thead>
+		<tbody>
+		<!-- ###RESULT_SINGLE_EVEN### begin -->
+			<tr class="even">
+				<td class="teaserimages">###PRODUCT_TEASERIMAGES###</td>
+				<td class="link"><a href="###PRODUCT_LINK###">###PRODUCT_TITLE###</a></td>
+				<td class="link"><a href="###CATEGORY_LINK###">###CATEGORY_NAVTITLE###</a></td>
+			</tr>
+		<!-- ###RESULT_SINGLE_EVEN### end -->
+		
+		<!-- ###RESULT_SINGLE_ODD### begin -->
+			<tr class="odd">
+				<td class="teaserimages">###PRODUCT_TEASERIMAGES###</td>
+				<td class="link"><a href="###PRODUCT_LINK###">###PRODUCT_TITLE###</a></td>
+				<td class="link"><a href="###CATEGORY_LINK###">###CATEGORY_NAVTITLE###</a></td>
+			</tr>
+		<!-- ###RESULT_SINGLE_ODD### end -->
+		</tbody>
+		<tfoot>
+		</tfoot>
+	</table>
+
+	<div class="tx_commercesearch_pi1_pagebrowser">###PAGE_BROWSER###</div>
+	
+</div>
+<!-- ###RESULT### end -->
+
+

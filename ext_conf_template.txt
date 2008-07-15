@@ -1,0 +1,2 @@
+# cat=basic/enable/10; type=Integer; label=Product Listing PID: IMPORTANT!, Type in the PID of the Product Listing Page
+pid.productList = 0 

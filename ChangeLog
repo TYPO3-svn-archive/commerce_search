@@ -1,0 +1,19 @@
+(add new changes on top of this file)
+
+09-07-08 Andreas Jonderko  <typo3@alnovi.de>
+  * Search in products and articles (title subtitle plain_text)
+  * Added search types (default, exact, startswith)
+
+
+13-01-08 Andreas Jonderko  <typo3@alnovi.de>
+
+  * Flexform has template choice
+	* Rendering through templates
+	* Image Display
+	* TS Configuration of file, target page for display 
+  * Localization
+  * SQL Optimizing
+
+11-01-08 Andreas Jonderko  <typo3@alnovi.de>
+
+	* Initial release
