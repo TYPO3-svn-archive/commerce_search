@@ -1,4 +1,5 @@
 
+
 After the installation, set the Page ID (pid) of the product list plugin 
 of commerce (pi1). Just put the extension on a site of your choice and 
 select a category, where the search should start.
