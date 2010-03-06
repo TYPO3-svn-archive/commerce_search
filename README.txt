@@ -1,5 +1,4 @@
 
-
 After the installation, set the Page ID (pid) of the product list plugin 
 of commerce (pi1). Just put the extension on a site of your choice and 
 select a category, where the search should start.
@@ -26,10 +25,28 @@ EXAMPLE TypoScript configuration
 
 plugin.tx_commercesearch_pi1{
  #size from teaser and images of the product
- file{
- 	maxH = 40
- 	maxW = 40
+
+ image {
+	file.maxW = 40
+	file.maxH = 40
+	imageLinkWrap = 1
+	imageLinkWrap {
+		enable = 1
+		bodyTag (
+			<body bgcolor="#000000" leftmargin="2" topmargin="2" marginwidth="2" marginheight="2">
+		)
+		wrap = <a href="javascript:close();"> | </a>
+		JSwindow = 1
+		JSwindow.newWindow = 1
+		JSwindow.expand = 4,4
+    }
  }
+
+# file{
+# 	maxH = 40
+# 	maxW = 40
+# }
+
 
  # this is need if you want to display the formular on other page as the plugin is placed.
  # specify where the output of the result should be 

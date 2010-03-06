@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext: "commerce_search"
 #
-# Auto generated 09-07-2008 21:05
+# Auto generated 24-04-2009 18:43
 #
 # Manual updates:
 # Only the data in the array - anything else is removed by next write.
@@ -29,7 +29,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
 	'author_company' => 'Alnovi',
-	'version' => '0.2.1',
+	'version' => '0.2.4',
 	'constraints' => array(
 		'depends' => array(
 			'commerce' => '',
@@ -39,7 +39,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:20:{s:9:"ChangeLog";s:4:"013a";s:10:"README.txt";s:4:"57a8";s:21:"ext_conf_template.txt";s:4:"0f64";s:12:"ext_icon.gif";s:4:"32c3";s:17:"ext_localconf.php";s:4:"20c0";s:14:"ext_tables.php";s:4:"0c07";s:12:"flexform.xml";s:4:"3ec8";s:13:"locallang.xml";s:4:"6564";s:16:"locallang_db.xml";s:4:"8333";s:27:"static/static/constants.txt";s:4:"956b";s:23:"static/static/setup.txt";s:4:"f531";s:14:"pi1/ce_wiz.gif";s:4:"32c3";s:35:"pi1/class.tx_commercesearch_pi1.php";s:4:"4a77";s:43:"pi1/class.tx_commercesearch_pi1_wizicon.php";s:4:"c01d";s:13:"pi1/clear.gif";s:4:"cc11";s:17:"pi1/locallang.xml";s:4:"f15d";s:30:"pi1/tx_commercesearch_pi1.html";s:4:"4713";s:24:"pi1/static/editorcfg.txt";s:4:"14d1";s:19:"doc/wizard_form.dat";s:4:"4495";s:20:"doc/wizard_form.html";s:4:"ab54";}',
+	'_md5_values_when_last_written' => 'a:20:{s:9:"ChangeLog";s:4:"013a";s:10:"README.txt";s:4:"34db";s:21:"ext_conf_template.txt";s:4:"0f64";s:12:"ext_icon.gif";s:4:"32c3";s:17:"ext_localconf.php";s:4:"8536";s:14:"ext_tables.php";s:4:"1a51";s:12:"flexform.xml";s:4:"3ec8";s:13:"locallang.xml";s:4:"f33d";s:16:"locallang_db.xml";s:4:"f369";s:27:"static/static/constants.txt";s:4:"956b";s:23:"static/static/setup.txt";s:4:"f531";s:14:"pi1/ce_wiz.gif";s:4:"32c3";s:35:"pi1/class.tx_commercesearch_pi1.php";s:4:"d5a1";s:43:"pi1/class.tx_commercesearch_pi1_wizicon.php";s:4:"c01d";s:13:"pi1/clear.gif";s:4:"cc11";s:17:"pi1/locallang.xml";s:4:"512d";s:30:"pi1/tx_commercesearch_pi1.html";s:4:"4713";s:24:"pi1/static/editorcfg.txt";s:4:"14d1";s:19:"doc/wizard_form.dat";s:4:"4495";s:20:"doc/wizard_form.html";s:4:"ab54";}',
 	'suggests' => array(
 	),
 );
