@@ -355,6 +355,12 @@ class tx_commercesearch_pi1 extends tslib_pibase {
 							$img = $this->renderImage($file, $title);    // give the object type (e.g. "product") and his uid to create a link)
 							$this->fillMarker($markerArr, $objectType."_".$field, $img);
 							break;
+						// added by Volker von Hoesslin
+						case "navtitle":
+                                			$navtitle = $navtitle ? $navtitle : $fields['title'];
+                                			$this->fillMarker($markerArr, $objectType."_".$field, $navtitle);
+                                			break;
+
 						}
 					}
 				}
@@ -798,7 +804,7 @@ class tx_commercesearch_pi1 extends tslib_pibase {
 		 $where = null;
 		 $limit = null;
 		 $groupBy = null;
-		 $orderBy = null;
+		 $orderBy = 'sorting DESC';
 		 $startCategory = $this->flexConf["startCategory"] ? $this->flexConf["startCategory"] : $this->conf["startCategory"];
 		 // build where clause
 		 $categories = $this->getCategoryChilds($startCategory);
@@ -819,8 +825,15 @@ class tx_commercesearch_pi1 extends tslib_pibase {
 		 $result = array();
 		 if ($res) {
 			 while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
-				 $result[$row["uid"]]["content"] = $row["title"];
-				 $result[$row["uid"]]["navtitle"] = $row["navtitle"] ? $row["navtitle"] : $row["title"];
+ 				//so lassen sich die Categorie einträge umbennen, um zB das RootElement in „Alle“ umzubennen…
+                		if(isset($this->conf['cat.'][$row["uid"].'.'])) {
+
+                    			$row["title"] = $this->conf['cat.'][$row["uid"].'.']['title'] ? $this->conf['cat.'][$row["uid"].'.']['title'] : $row["title"];
+                    			$row["navtitle"] = $this->conf['cat.'][$row["uid"].'.']['navtitle'] ? $this->conf['cat.'][$row["uid"].'.']['navtitle'] : $row["navtitle"];
+
+                		}
+				$result[$row["uid"]]["content"] = $row["title"];
+				$result[$row["uid"]]["navtitle"] = $row["navtitle"] ? $row["navtitle"] : $row["title"];
 			 }
 		 }
 		 return $result;
